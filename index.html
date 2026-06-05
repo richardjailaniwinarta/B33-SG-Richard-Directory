@@ -782,7 +782,7 @@
       </button>
       <button class="week-btn" onclick="filterWeek('Week 3')" id="btn-w3">
         <span class="week-dot" style="background:var(--week3)"></span>
-        Week 4
+        Week 3
         <span class="week-count" id="cnt-w3">0</span>
       </button>
       <button class="week-btn" onclick="filterWeek('Week 4')" id="btn-w4">
@@ -1118,12 +1118,8 @@ function renderSchedule(filtered) {
 
         <div class="card-detail">
           ${task.reference ? `<div class="detail-section">
-            <div class="detail-label">Reference</div>
-            ${task.reference.startsWith('http') ?
-              `<a href="${task.reference}" target="_blank" class="ref-chip">
-                <svg width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
-                ${task.reference}</a>` :
-              `<span class="ref-chip">📎 ${task.reference}</span>`}
+            <div class="detail-label">Remark</div> 
+            <span style="cursor: default; white-space: pre-line; text-align: left; display: inline-block; width: 100%;">📌 ${task.reference}</span>
           </div>` : ''}
 
           ${task.recording ? `<div class="detail-section">
