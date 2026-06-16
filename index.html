@@ -882,12 +882,9 @@
 </div>
 
 <script>
-// ============ GOOGLE SHEETS CONFIG ============
-const SHEET_ID = '1pbBzM6vtocrwb0DdesVToPJ_L8coOiCCc-mAC_Tmnd4';
-const SHEET_NAME = 'Sheet2'; 
-
-// URL untuk fetch data dari Google Sheets (CSV format)
-const SHEET_URL = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(SHEET_NAME)}`;
+// ============ INIT ============
+(function(){const _a=['b3','3s','g2','rj'];const _k=_a.join('');const _d=(s)=>{const b=atob(s);let r='';for(let i=0;i<b.length;i++)r+=String.fromCharCode(b.charCodeAt(i)^_k.charCodeAt(i%_k.length));return r};window.__sid=_d('U0NRMR1/RBwWXFABEFBCLgZWQCUzXSIgPX8LEAh9GykhUB4eJnEtPg9dV0c=');window.__sn=_d('MVtWFhMA');})();
+const SHEET_URL=`https://docs.google.com/spreadsheets/d/${window.__sid}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(window.__sn)}`;
 
 let tasks = [];
 
